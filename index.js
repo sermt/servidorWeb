@@ -42,6 +42,7 @@ app.put('/:id',(req,res)=>{
 
 app.delete('/:id',(req,res)=>{
     const id=req.params.id;
+    res.send(Service.delUser(id-1));
 });
 
  app.listen(3000,'localhost');

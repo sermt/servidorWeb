@@ -14,6 +14,10 @@ module.exports={
          data[index]=datos;
         return data;
     },
+    delUser:(id)=> {
+        delete data[id];
+        return data;
+    },
     createUser: (dataUser)=>{
         let newUser={
             id: data.length+1,
